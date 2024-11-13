@@ -7,7 +7,7 @@ const app = express();
 app.use(express.json());
 
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5050;
 
 // connect to MongoDB
 mongoose.connect(process.env.DB_CONNECT)
