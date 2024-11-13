@@ -7,12 +7,12 @@ const app = express();
 app.use(express.json());
 
 
-const PORT = process.env.PORT || 5050;
+const PORT = process.env.PORT || 5055;
 
 // connect to MongoDB
 mongoose.connect(process.env.DB_CONNECT)
 .then(()=> console.log('Connect to database'))
-.catch(err => console.log('Error connecting to'))
+.catch(err => console.log('Error connecting'))
 
 
 // add port and connect to server
